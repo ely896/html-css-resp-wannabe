@@ -55,6 +55,7 @@ img {
 }
 
 
+
 .row {
     display: flex;
 }
@@ -130,3 +131,36 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+  @media screen and (max-width: 480px) {
+    
+    .container {
+        width: 100%;
+    }
+    .row {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lessons .col {
+        width: 100%;
+    }
+
+    .card {
+        margin: 1rem 0;
+    }
+    
+
+    .steps .col {
+        width: 100%;
+    }
+
+    .why-us .col-left{
+        width: 100%;
+    }
+
+    .why-us .col-right {
+        width: 100%;
+    }
+}
