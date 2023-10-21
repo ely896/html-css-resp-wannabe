@@ -54,8 +54,6 @@ img {
     padding: 0 20px;
 }
 
-
-
 .row {
     display: flex;
 }
@@ -67,7 +65,7 @@ img {
 
 /* TEXT */
 .text-center {
-    text-align: center;
+    text-align: center;  
 }
 
 /************************************************
@@ -132,23 +130,32 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-@media screen and (max-width: 768px) {
+
+ @media screen and (max-width: 1160px) {
     .container {
-        width: 100%;
+        width: 90%;
     }
-    
+
 }
 
 
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
     
     .container {
         width: 100%;
+        padding: 0;
     }
     .row {
-        flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .lessons .col {
@@ -159,7 +166,6 @@ img {
         margin: 1rem 0;
     }
     
-
     .steps .col {
         width: 100%;
     }
